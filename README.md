@@ -7,3 +7,6 @@ Projeto de Cadastro de Funcionários da Empresa para um Café da Manhã
 
 A aplicação foi criada seguindo a arquitetura REST, de modo que o app frontend consome os dados retornados pela API no backend  
 
+Link Heroku: https://breakfastproj-frontend.herokuapp.com/  
+Link API Java Heroku: https://breakfastproj-backend.herokuapp.com/api/
+
