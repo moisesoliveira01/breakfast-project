@@ -61,7 +61,7 @@ const Lista = () => {
                         })}
                     </tbody>
                     </table>
-        </div>
+            </div>
     );
 }
 
