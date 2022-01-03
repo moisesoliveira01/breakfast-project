@@ -34,5 +34,9 @@ public interface CafeDaManhaRepository extends JpaRepository<CafeDaManha, Long> 
 	@Query(value = "delete from cafe_da_manha where colaborador_id = ?1", nativeQuery = true)
 	@Modifying
 	void excluirPorColab(Long idColab);
+	
+	@Query(value = "delete from cafe_da_manha where descricao = ?1", nativeQuery = true)
+	@Modifying
+	void excluirPorDescricao(String descricao);
 
 }

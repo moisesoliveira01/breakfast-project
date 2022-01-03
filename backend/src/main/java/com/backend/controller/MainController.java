@@ -116,4 +116,11 @@ public class MainController {
 		return new ResponseEntity<String>("colaboradores excluídos com sucesso!", HttpStatus.OK);
 	}
 	
+	@DeleteMapping(value = "/cafedamanha/{descricao}")
+	public ResponseEntity<String> excluirCafePorDescricao(@PathVariable String descricao) {
+		
+		cafeDaManhaRepository.excluirPorDescricao(descricao);
+		
+		return new ResponseEntity<String>("item excluído com sucesso!", HttpStatus.OK);
+	}
 }
