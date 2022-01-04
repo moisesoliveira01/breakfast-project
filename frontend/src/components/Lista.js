@@ -20,8 +20,8 @@ const Lista = () => {
     }, [])
 
     function excluir (ev) {
-        if (window.confirm("Tem certeza que deseja excluir essa pessoa da lista?")){
-            api.delete(`/colaborador/${ev.target.id}`)
+        if (window.confirm("Tem certeza que deseja excluir esse item da lista?")){
+            api.delete(`/cafedamanha/${ev.target.id}`)
             .then((response) => {
                 alert(response.data);
 
@@ -55,7 +55,7 @@ const Lista = () => {
                                     <td>{colabCaf[2]}</td>
                                     <td>{colabCaf[3]}</td>
                                     <td><button className="btn btn-outline-warning" id={colabCaf[2]} name={colabCaf[3]} onClick={showEdit}>Editar</button></td>
-                                    <td><button className="btn btn-outline-danger" id={colabCaf[0]} onClick={excluir}>Excluir</button></td>
+                                    <td><button className="btn btn-outline-danger" id={colabCaf[3]} onClick={excluir}>Excluir</button></td>
                                 </tr>
                             )
                         })}
